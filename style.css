@@ -1,0 +1,351 @@
+
+.reducir{
+   width: 1400px;
+   height: 400px;
+   margin-left: 60px;
+   border: solid 3px yellow;
+}
+
+.reducir img{
+   height: 400px;
+}
+
+
+
+iframe{
+   border: solid 3px yellow;
+}
+
+/* Escudos */
+
+.ajustar {
+   height: 50px !important;
+   width: 50px !important;
+   margin: 10px !important;
+   border: solid 0px !important;
+} 
+
+
+/* Menu */
+ .menu{
+    height: 80px;
+ }
+
+ .grande{
+    font-size: 25px;
+    margin-top: -4px;
+ }
+
+.logoMenu{
+   height: 60px ;
+   width: 60px !important;
+   border: solid 2px yellow;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+
+
+ /* carrusel */
+
+ .blue{
+    background-color: rgb(4, 4, 54);
+ }
+
+/* Cards */
+
+img{
+   height:350px;
+   width: 625px !important;
+   margin-left: 0px;
+   border: solid 3px yellow;
+}
+
+div .col{
+   width: 650px !important;
+   margin-left: 70px;
+   margin-top: 50px;
+   margin-bottom: 20px;
+}
+
+
+.card-text{
+   width: 615px;
+   color: white;
+   text-shadow: 1px 1px 1px yellow;
+   font-family:  Georgia;
+   font-size: 20px;
+}
+
+.card-text span{
+   color: red;
+}
+
+.card-title{
+   color: white;
+   text-shadow: 2px 2px 2px green;
+   font-family:  Georgia;
+}
+
+.col .card .card-body
+{
+   
+   background-image: linear-gradient(150deg, rgba(4, 4, 54, 0.788) 10%, rgba(0, 0, 0, 0.911) 100%);
+   /* background-image: linear-gradient(135deg, rgba(255, 255, 0, 0.281) 10%, rgb(2, 2, 0) 100%); */
+}
+
+
+
+
+
+/* tabla partidos */
+
+
+
+.tablaliga{
+   font-size: 55px;
+   color: white;
+   text-shadow: 1px 1px 1px yellow;
+   margin: 100px;
+}
+
+.logolig{
+   height: 250px ;
+   width: 250px !important;
+}
+
+.colortab{
+   background-color: white;
+}
+
+.colorloc{
+   color: red;
+   font-size: 17px;
+}
+
+.colorvisi{
+   color: blue;
+   font-size: 17px;
+}
+
+.colorres{
+   color: rgb(2, 124, 2);
+   font-size: 19px;
+}
+
+.colorjor{
+   color: magenta;
+   font-size: 20px;
+}
+
+
+table .colorResult tr td:nth-child(5){
+color: green;
+font-size: 20px;
+}
+
+
+
+/* tabla clasif */
+
+.gradi{
+   background-image: linear-gradient(150deg, rgba(4, 4, 54, 0.788) 50%, rgba(0, 0, 0, 0.911) 100%);
+}
+
+.tablaligaclasi{
+   font-size: 50px;
+   color: white;
+   text-shadow: 1px 1px 1px yellow;
+   margin: 100px;
+}
+
+.logoligclasi{
+   height: 300px ;
+   width: 300px !important;
+}
+
+ 
+ /* Footer  */
+
+
+footer img {
+   height: 50px;
+   width: 50px !important;
+   border: solid 0px !important;
+   margin: 5px;
+}
+
+.twit{
+   width: 60px !important;
+}
+
+th{
+   font-size: 20px;
+}
+
+
+footer span{
+   color: yellow;
+   font-size: 18px;
+}
+
+.footersep{
+   margin-left: -25px;
+}
+
+.footersep a{
+   margin: 5px
+}
+
+.centrarfooter{
+   margin-left: -170px;
+}
+
+.centrartextfooter{
+   margin-left: -10px;
+}
+
+
+/*Radios */
+
+.ajustarform {
+   margin-bottom: 20px;
+   margin-left: 400px;
+   margin-right: 100px;
+}
+
+.check{
+   margin: 10px;
+   margin-top: 16px;
+}
+
+.boton{
+   margin: 5px;
+}
+
+.reset{
+   margin: 5px;
+}
+
+.label{
+  margin-right: 25px;
+  margin-top: 10px;
+  white-space: nowrap;
+}
+
+.labcheck1{
+   color: green;
+}
+
+.labcheck2{
+color: red;
+}
+
+.labcheck3{
+   color: violet;
+}
+
+.labcheck4{
+   color: chartreuse;
+}
+
+/* clasifi */
+
+.labcheckc1{
+color: orange;
+}
+
+.labcheckc2{
+color: cyan;
+}
+
+.botonc{
+   margin: 5px;
+}
+
+.resetc{
+   margin: 5px;
+}
+
+.c{
+   margin-left: 800px;
+}
+
+/* tablas 5 mejores */
+
+.top{
+   margin-top: 20px;
+   width: 900px;
+}
+
+.reduciresta{
+   width: 220px;
+}
+
+.reduciresta2V{
+   width: 300px;
+}
+
+.reduciresta2G{
+   width: 220px;
+}
+
+.reduciresta2P{
+   width: 220px;
+}
+
+.ajustar2 {
+   height: 60px !important;
+   width: 60px !important;
+   margin: 10px !important;
+   border: solid 0px !important;
+} 
+
+.tablaMedia{
+   font-size: 40px;
+   color: rgb(4, 4, 54);;
+   text-shadow: 1px 1px 1px rgb(4, 4, 54);;
+   margin: 50px;
+   margin-top: 100px;
+}
+
+.tablaGContra{
+   font-size: 40px;
+   color: rgb(4, 4, 54);;
+   text-shadow: 1px 1px 1px rgb(4, 4, 54);;
+   margin: 50px;
+   margin-top: 120px;
+}
+
+.logoMedia{
+   height: 240px ;
+   width: 240px !important;
+   margin-top: 20px;
+   border: solid 4px  rgb(158, 135, 4)
+}
+
+.M{
+margin-left: 20px;
+}
+
+.logoContra{
+   height: 260px ;
+   width: 260px !important;
+   margin-top: 20px;
+   border: solid 4px  rgb(158, 135, 4)
+}
+
+.estacolor{
+   background-image: linear-gradient(150deg, rgba(255, 255, 255, 0.363) 10%, rgba(0, 0, 0, 0.911) 100%);
+}
+
+
+.logoMedia,
+.logoContra{
+   opacity: 0.9;
+}
+
+.opa{
+   opacity: 0.8;
+}
+   
