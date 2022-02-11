@@ -14,11 +14,8 @@ Toda la información está conectada de manera asíncrona a una API por lo que l
 En cuanto atenologías hemos empleado: 
 
 - HTML: Es un lenguaje de marcado que lo hemos usado para estructurar las páginas y poner los ids, clases y scripts de conexion a CSS y JS. 
--
 - CSS: Lo hemos usado para darle estilo a las páginas y hemos usado diferentes propiedas y alguna animación como el spinner.
--
 - Bootstrap: Lo hemos usado para darle un diseño más estandarizado a todas las páginas usando diferentes clases en sus correspondientes etiquetas, por ejemplo un carrusel de vídeo e imágenes.
--
 - JavaScript: Ha sido la tecnología más utilizada con ella le hemos dado dinamismo a la página, hemos realizado distintas funciones, bucles For, ForEach cuyo resultado ha sido la manipulación de objetos (DOM) de la API, hemos obtenidos los objetos los hemos recoorrido y filtrado y hemos creado nuevas tablas con sus correspondientes buscadores botones y filtros.
 
 ![Tecnologies](https://user-images.githubusercontent.com/96442220/153618938-50bd2647-cb80-4386-b1c1-49b35960a3f0.jpg)
