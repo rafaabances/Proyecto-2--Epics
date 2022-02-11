@@ -11,14 +11,20 @@ En la página de partidos se podrá realizar filtros de partidos ganados, perdid
 
 Toda la información está conectada de manera asíncrona a una API por lo que la información está actualizada en todo momento haciendo de esta web dinámica y no estática.
 
-En cuanto a ![download](https://user-images.githubusercontent.com/96442220/153617597-34c2c0ce-85cb-4701-affa-14c9d6b90df5.png)
-![html5-css3-js](https://user-images.githubusercontent.com/96442220/153617600-fbea18a4-fad7-4bf5-990f-7eae7efa3ddf.png)
+En cuanto atenologías hemos empleado: 
+
+- HTML:
+- CSS
+- JavaScript:
+
+![Tecnologies](https://user-images.githubusercontent.com/96442220/153618938-50bd2647-cb80-4386-b1c1-49b35960a3f0.jpg)
+
+Y para conectarnos a la API hemos usado la función Fetch a la aplicación de Postman:
+
+![Postman](https://user-images.githubusercontent.com/96442220/153619303-7a38da86-a336-42d2-9a1f-98bc72d24442.jpg)
 
 
 
-- Elemento 1
-- Elemento 2
-- Elemento 3
 Este es un ejemplo de texto que da entrada a una lista numerada:
 1. Elemento 1
 2. Elemento 2
