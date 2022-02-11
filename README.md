@@ -2,7 +2,7 @@
 
 ### FútbolRafi.Com
 
-[enlace en línea](https://futbolrafi.netlify.app/home)
+Accede a la web: [FútbolRafi.com](https://futbolrafi.netlify.app/home)
 
 
 Se trata de un proyecto en el cual se va a desarrollar una web deportiva para fúboleros, en donde se podrá encontrar todos los partidos jugados de diferentes ligas, Santander, la Premier, la BundesLiga entre otras. También se podrá 
