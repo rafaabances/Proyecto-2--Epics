@@ -21,7 +21,8 @@ En cuanto atenologías hemos empleado:
 
 Y para conectarnos a la API hemos usado la función Fetch a la aplicación de Postman:
 
-![Postman](https://user-images.githubusercontent.com/96442220/153619303-7a38da86-a336-42d2-9a1f-98bc72d24442.jpg)
+![download](https://user-images.githubusercontent.com/96442220/153619751-91428778-94b4-4430-9744-ee2883ff57ae.png)
+
 
 
 
