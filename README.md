@@ -64,5 +64,5 @@ Consta de 1aler de Java Script y 3 Modal/alerts:
 
 ***
 Contacto: Hotmail: **rafaelabancesserrate@hotmail.com**
-Telf: *+34 608 292 160*
+Telf: **+34 608 292 160**
 
