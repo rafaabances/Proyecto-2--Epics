@@ -212,7 +212,7 @@ function Crearfiltro(partido) {
         return poneralerta2() // alerta2 el equipo que buscas no se encuentra en esta liga
     }
 
-   
+
 
     if (check === null) {
         return CrearTabla(nombreEqinput)

@@ -38,13 +38,13 @@ function getFetch(url) {
         let clasife = data4.standings[0].table
 
 
-    
-        
+
+
         quitarSpinner()
         CrearTabla2(clasife)
 
 
-    }).catch(error =>{
+    }).catch(error => {
         console.log(error)
         alert("Ha ocurrido un error")
     })
@@ -55,31 +55,31 @@ getFetch("https://api.football-data.org/v2/competitions/2014/standings")
 
 
 let ligaEspañola = document.getElementById("botonEspañola");
-ligaEspañola.addEventListener("click", ()=>{
+ligaEspañola.addEventListener("click", () => {
     const url = "https://api.football-data.org/v2/competitions/2014/standings"
     getFetch(url)
 })
 
 let premierLeague = document.getElementById("botonPremier");
-premierLeague.addEventListener("click", ()=>{
+premierLeague.addEventListener("click", () => {
     const url = "https://api.football-data.org/v2/competitions/2021/standings"
     getFetch(url)
 })
 
 let ligaFrancesa = document.getElementById("botonFrancesa");
-ligaFrancesa.addEventListener("click", ()=>{
+ligaFrancesa.addEventListener("click", () => {
     const url = "https://api.football-data.org/v2/competitions/2015/standings"
     getFetch(url)
 })
 
 let ligaItaliana = document.getElementById("botonItaliana");
-ligaItaliana.addEventListener("click", ()=>{
+ligaItaliana.addEventListener("click", () => {
     const url = "https://api.football-data.org/v2/competitions/2019/standings"
     getFetch(url)
 })
 
 let ligaAlemana = document.getElementById("botonAlemana");
-ligaAlemana.addEventListener("click", ()=>{
+ligaAlemana.addEventListener("click", () => {
     console.log("funciona")
     const url = "https://api.football-data.org/v2/competitions/2002/standings"
     getFetch(url)
@@ -202,7 +202,7 @@ function CrearTabla2(parametro2) {
 // }
 
 function quitarSpinner() {
-    let spinner =  document.getElementById("spinner")
+    let spinner = document.getElementById("spinner")
     spinner.style.display = "none"
     spinner.style.visibility = "hidden"
 }
