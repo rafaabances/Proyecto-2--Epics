@@ -1,5 +1,76 @@
-let partidos = data2.matches;
-let mediaG;
+// let partidos = data2.matches;
+
+
+
+
+function getFetch(url) {
+    // mostrarSpinner();
+    // const url = "https://api.football-data.org/v2/competitions/2014/matches"
+    fetch(url, {
+        method: "GET", // Get - obtener datos, // Post -colocar datos, //DELETE - Borrar datos, // Put - modificar datos
+        headers: {
+            "X-Auth-Token": "41f87edae9264941818b2308e722b502"
+        }
+    }).then(response => {
+        if (response.ok) {
+            return response.json()
+        }
+
+    }).then(data4 => {
+        let estadisfe = data4.matches
+
+
+        quitarSpinner()
+        quitarSpinner2()
+        estadisticas(estadisfe)
+        estadisticas2(estadisfe)
+
+
+    }).catch(error => {
+        console.log(error)
+        alert("Ha ocurrido un error")
+    })
+
+
+}
+getFetch("https://api.football-data.org/v2/competitions/2014/matches")
+
+
+let ligaEspañola = document.getElementById("botonEspañola");
+ligaEspañola.addEventListener("click", () => {
+    const url = "https://api.football-data.org/v2/competitions/2014/matches"
+    getFetch(url)
+})
+
+let premierLeague = document.getElementById("botonPremier");
+premierLeague.addEventListener("click", () => {
+    const url = "https://api.football-data.org/v2/competitions/2021/matches"
+    getFetch(url)
+})
+
+let ligaFrancesa = document.getElementById("botonFrancesa");
+ligaFrancesa.addEventListener("click", () => {
+    const url = "https://api.football-data.org/v2/competitions/2015/matches"
+    getFetch(url)
+})
+
+let ligaItaliana = document.getElementById("botonItaliana");
+ligaItaliana.addEventListener("click", () => {
+    const url = "https://api.football-data.org/v2/competitions/2019/matches"
+    getFetch(url)
+})
+
+let ligaAlemana = document.getElementById("botonAlemana");
+ligaAlemana.addEventListener("click", () => {
+    const url = "https://api.football-data.org/v2/competitions/2002/matches"
+    getFetch(url)
+})
+
+let champions = document.getElementById("botonChampion");
+champions.addEventListener("click", () => {
+    const url = "https://api.football-data.org/v2/competitions/2001/matches"
+    getFetch(url)
+})
 
 
 function estadisticas(partido) {
@@ -51,22 +122,23 @@ function estadisticas(partido) {
             estadisticasPartido.push({
                 id: idVisitante,
                 name: EqVisitante,
-                goals: golesVisitante, 
+                goals: golesVisitante,
                 matches: 1
             })
         } else {
             equipoVisitanteEncontrado.matches++
-            equipoVisitanteEncontrado.goals += golesVisitante 
+            equipoVisitanteEncontrado.goals += golesVisitante
         }
     }
 
-    for (let i = 0; i < estadisticasPartido.length; i++) { 
+    for (let i = 0; i < estadisticasPartido.length; i++) {
+        let mediaG;
         mediaG = estadisticasPartido[i].goals / estadisticasPartido[i].matches
         estadisticasPartido[i].avg = mediaG
     }
 
 
-    estadisticasPartido.sort(function (a, b) {  
+    estadisticasPartido.sort(function (a, b) {
         return b.avg - a.avg;
     });
 
@@ -77,7 +149,7 @@ function estadisticas(partido) {
     crearTabla(top5estadisticas)
 }
 
-estadisticas(partidos);
+// estadisticas(partidos);
 
 function crearTabla(topMejores) {
     let tabla = document.getElementById("cuerpo_tabla2")
@@ -89,8 +161,8 @@ function crearTabla(topMejores) {
 
         let equipo = topMejores[i].id
         let Escudo = document.createElement("img")
-            Escudo.setAttribute("src", "https://crests.football-data.org/" + equipo + ".svg") 
-            Escudo.classList.add("ajustar2")
+        Escudo.setAttribute("src", "https://crests.football-data.org/" + equipo + ".svg")
+        Escudo.classList.add("ajustar2")
 
         let datosRecogidos2 = [Escudo, topMejores[i].name, topMejores[i].goals, topMejores[i].matches, topMejores[i].avg.toFixed(2)]
 
@@ -154,12 +226,12 @@ function estadisticas2(partido) {
             })
         } else {
             equipoVisitanteEncontrado.matches++
-            equipoVisitanteEncontrado.goals += golesLocal 
+            equipoVisitanteEncontrado.goals += golesLocal
         }
     }
 
 
-    estadisticasPartido2.sort(function (a, b) {  // a-b de menor a mayor con goals.
+    estadisticasPartido2.sort(function (a, b) { // a-b de menor a mayor con goals.
         return a.goals - b.goals;
     });
 
@@ -170,11 +242,11 @@ function estadisticas2(partido) {
     crearTabla2(top5estadisticas2)
 }
 
-estadisticas2(partidos);
+// estadisticas2(partidos);
 
 function crearTabla2(topMejores2) {
     let tabla2 = document.getElementById("cuerpo_tabla3")
-    // tabla2.innerText = "";
+    tabla2.innerText = "";
 
     for (let i = 0; i < topMejores2.length; i++) {
 
@@ -182,8 +254,8 @@ function crearTabla2(topMejores2) {
 
         let equipo = topMejores2[i].id
         let Escudo = document.createElement("img")
-            Escudo.setAttribute("src", "https://crests.football-data.org/" + equipo + ".svg") 
-            Escudo.classList.add("ajustar")
+        Escudo.setAttribute("src", "https://crests.football-data.org/" + equipo + ".svg")
+        Escudo.classList.add("ajustar")
 
         let datosRecogidos3 = [Escudo, topMejores2[i].name, topMejores2[i].goals, topMejores2[i].matches]
 
@@ -201,4 +273,25 @@ function crearTabla2(topMejores2) {
 
 
 
+}
+
+
+// Crearfiltro(partidos)
+
+// function mostrarSpinner() {
+//    let spinner =  document.getElementById("spinner")
+//    spinner.style.display = "block"
+//    spinner.style.visibility = "visible"
+// }
+
+function quitarSpinner() {
+    let spinner = document.getElementById("spinner")
+    spinner.style.display = "none"
+    spinner.style.visibility = "hidden"
+}
+
+function quitarSpinner2() {
+    let spinner = document.getElementById("spinner2")
+    spinner.style.display = "none"
+    spinner.style.visibility = "hidden"
 }

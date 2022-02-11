@@ -18,7 +18,77 @@
 //     console.log("Puntuación" + " " + clasi[i].points)
 // }
 
-let clasi = data.standings[0].table
+
+
+function getFetch(url) {
+    // mostrarSpinner();
+    // const url = "https://api.football-data.org/v2/competitions/2014/standings"
+    fetch(url, {
+        method: "GET", // Get - obtener datos, // Post -colocar datos, //DELETE - Borrar datos, // Put - modificar datos
+        headers: {
+            "X-Auth-Token": "41f87edae9264941818b2308e722b502"
+        }
+    }).then(response => {
+        if (response.ok) {
+            return response.json()
+        }
+
+    }).then(data4 => {
+        console.log(data4)
+        let clasife = data4.standings[0].table
+
+
+    
+        
+        quitarSpinner()
+        CrearTabla2(clasife)
+
+
+    }).catch(error =>{
+        console.log(error)
+        alert("Ha ocurrido un error")
+    })
+
+
+}
+getFetch("https://api.football-data.org/v2/competitions/2014/standings")
+
+
+let ligaEspañola = document.getElementById("botonEspañola");
+ligaEspañola.addEventListener("click", ()=>{
+    const url = "https://api.football-data.org/v2/competitions/2014/standings"
+    getFetch(url)
+})
+
+let premierLeague = document.getElementById("botonPremier");
+premierLeague.addEventListener("click", ()=>{
+    const url = "https://api.football-data.org/v2/competitions/2021/standings"
+    getFetch(url)
+})
+
+let ligaFrancesa = document.getElementById("botonFrancesa");
+ligaFrancesa.addEventListener("click", ()=>{
+    const url = "https://api.football-data.org/v2/competitions/2015/standings"
+    getFetch(url)
+})
+
+let ligaItaliana = document.getElementById("botonItaliana");
+ligaItaliana.addEventListener("click", ()=>{
+    const url = "https://api.football-data.org/v2/competitions/2019/standings"
+    getFetch(url)
+})
+
+let ligaAlemana = document.getElementById("botonAlemana");
+ligaAlemana.addEventListener("click", ()=>{
+    console.log("funciona")
+    const url = "https://api.football-data.org/v2/competitions/2002/standings"
+    getFetch(url)
+})
+
+
+
+
+// let clasi = data.standings[0].table
 
 function CrearTabla2(parametro2) {
     let tabla = document.getElementById("cuerpo_tabla2")
@@ -78,7 +148,7 @@ function CrearTabla2(parametro2) {
 
 }
 
-CrearTabla2(clasi)
+// CrearTabla2(clasi)
 
 
 // function unselect() {
@@ -112,7 +182,7 @@ CrearTabla2(clasi)
 //                 return true
 //             }
 //         }
-  
+
 
 //     })
 
@@ -122,3 +192,17 @@ CrearTabla2(clasi)
 
 
 //  Crearfiltro(clasi)
+
+
+
+// function mostrarSpinner() {
+//    let spinner =  document.getElementById("spinner")
+//    spinner.style.display = "block"
+//    spinner.style.visibility = "visible"
+// }
+
+function quitarSpinner() {
+    let spinner =  document.getElementById("spinner")
+    spinner.style.display = "none"
+    spinner.style.visibility = "hidden"
+}

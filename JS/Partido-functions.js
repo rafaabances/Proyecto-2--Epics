@@ -9,7 +9,95 @@
 //     console.log("Nº de Jornada" + " " + partidos[i].matchday)
 // }
 
-let partidos = data2.matches
+quitaralerta1();
+quitaralerta2();
+quitaralerta3();
+
+
+function getFetch(url) {
+    // mostrarSpinner();
+    // const url = "https://api.football-data.org/v2/competitions/2014/matches"
+    fetch(url, {
+        method: "GET", // Get - obtener datos, // Post -colocar datos, //DELETE - Borrar datos, // Put - modificar datos
+        headers: {
+            "X-Auth-Token": "41f87edae9264941818b2308e722b502"
+        }
+    }).then(response => {
+        if (response.ok) {
+            return response.json()
+        }
+
+    }).then(data3 => {
+        let partidosfe = data3.matches
+
+        let boton = document.getElementById("boton")
+        boton.addEventListener("click", () => {
+            Crearfiltro(partidosfe);
+        })
+
+        let reset = document.getElementById("botonreset")
+        reset.addEventListener("click", () => {
+            unselect();
+            quitaralerta1()
+            quitaralerta2();
+            quitaralerta3();
+            CrearTabla(partidosfe);
+        })
+
+
+        quitarSpinner()
+        CrearTabla(partidosfe)
+
+
+    }).catch(error => {
+        console.log(error)
+        alert("Ha ocurrido un error")
+    })
+
+
+}
+getFetch("https://api.football-data.org/v2/competitions/2014/matches")
+
+
+let ligaEspañola = document.getElementById("botonEspañola");
+ligaEspañola.addEventListener("click", () => {
+    const url = "https://api.football-data.org/v2/competitions/2014/matches"
+    getFetch(url)
+})
+
+let premierLeague = document.getElementById("botonPremier");
+premierLeague.addEventListener("click", () => {
+    const url = "https://api.football-data.org/v2/competitions/2021/matches"
+    getFetch(url)
+})
+
+let ligaFrancesa = document.getElementById("botonFrancesa");
+ligaFrancesa.addEventListener("click", () => {
+    const url = "https://api.football-data.org/v2/competitions/2015/matches"
+    getFetch(url)
+})
+
+let ligaItaliana = document.getElementById("botonItaliana");
+ligaItaliana.addEventListener("click", () => {
+    const url = "https://api.football-data.org/v2/competitions/2019/matches"
+    getFetch(url)
+})
+
+let ligaAlemana = document.getElementById("botonAlemana");
+ligaAlemana.addEventListener("click", () => {
+    const url = "https://api.football-data.org/v2/competitions/2002/matches"
+    getFetch(url)
+})
+
+let champions = document.getElementById("botonChampion");
+champions.addEventListener("click", () => {
+    const url = "https://api.football-data.org/v2/competitions/2001/matches"
+    getFetch(url)
+})
+
+
+
+// let partidos = data2.matches
 
 function CrearTabla(parametro1) {
     let tabla = document.getElementById("cuerpo_tabla")
@@ -74,7 +162,7 @@ function CrearTabla(parametro1) {
 
 }
 
-CrearTabla(partidos)
+// CrearTabla(partidos)
 
 
 
@@ -86,26 +174,31 @@ function unselect() {
     }
 }
 
-let reset = document.getElementById("botonreset")
-reset.addEventListener("click", () => {
-    unselect();
-    CrearTabla(partidos);
-})
+// let reset = document.getElementById("botonreset")
+// reset.addEventListener("click", () => {
+//     unselect();
+//     CrearTabla(partidos);
+// })
 
-//Filtros
+// Filtros
 
-let boton = document.getElementById("boton")
-boton.addEventListener("click", () => {
-    Crearfiltro(partidos);
-})
+// let boton = document.getElementById("boton")
+// boton.addEventListener("click", () => {
+//     Crearfiltro(partidos);
+// })
 
 
 function Crearfiltro(partido) {
     let inputnombre = document.getElementById("inputbusc").value
     let check = document.querySelector("input[type=radio]:checked")
     if (inputnombre == "") {
-        CrearTabla(partidos)
+        return poneralerta1();
     }
+
+    if (!isNaN(inputnombre)) {
+        return poneralerta3()
+    }
+
     let nombreEqinput = partido.filter(x => {
         if (x.homeTeam.name.toLowerCase().includes(inputnombre.toLowerCase()) || (x.awayTeam.name.toLowerCase().includes(inputnombre.toLowerCase()))) {
             return true
@@ -115,9 +208,11 @@ function Crearfiltro(partido) {
         }
     })
 
-    if (nombreEqinput.length === 0) {
-        return CrearTabla(partidos)
+    if ((nombreEqinput.length === 0)) {
+        return poneralerta2() // alerta2 el equipo que buscas no se encuentra en esta liga
     }
+
+   
 
     if (check === null) {
         return CrearTabla(nombreEqinput)
@@ -154,4 +249,46 @@ function Crearfiltro(partido) {
     unselect()
 }
 
-Crearfiltro(partidos)
+// Crearfiltro(partidos)
+
+// function mostrarSpinner() {
+//    let spinner =  document.getElementById("spinner")
+//    spinner.style.display = "block"
+//    spinner.style.visibility = "visible"
+// }
+
+function quitarSpinner() {
+    let spinner = document.getElementById("spinner")
+    spinner.style.display = "none"
+    spinner.style.visibility = "hidden"
+}
+
+function poneralerta1() {
+    let alert1 = document.getElementById("aler1")
+    alert1.style.display = "block"
+}
+
+function quitaralerta1() {
+    let alert1 = document.getElementById("aler1")
+    alert1.style.display = "none"
+}
+
+function poneralerta2() {
+    let alert1 = document.getElementById("aler2")
+    alert1.style.display = "block"
+}
+
+function quitaralerta2() {
+    let alert1 = document.getElementById("aler2")
+    alert1.style.display = "none"
+}
+
+function poneralerta3() {
+    let alert1 = document.getElementById("aler3")
+    alert1.style.display = "block"
+}
+
+function quitaralerta3() {
+    let alert1 = document.getElementById("aler3")
+    alert1.style.display = "none"
+}

@@ -1,18 +1,17 @@
-
-.reducir{
+.reducir {
    width: 1400px;
    height: 400px;
    margin-left: 60px;
    border: solid 3px yellow;
 }
 
-.reducir img{
+.reducir img {
    height: 400px;
 }
 
 
 
-iframe{
+iframe {
    border: solid 3px yellow;
 }
 
@@ -23,45 +22,54 @@ iframe{
    width: 50px !important;
    margin: 10px !important;
    border: solid 0px !important;
-} 
+}
 
 
 /* Menu */
- .menu{
-    height: 80px;
- }
+.menu {
+   height: 80px;
+}
 
- .grande{
-    font-size: 25px;
-    margin-top: -4px;
- }
+.grande {
+   font-size: 25px;
+   margin-top: -4px;
+}
 
-.logoMenu{
-   height: 60px ;
+.logoMenu {
+   height: 60px;
    width: 60px !important;
    border: solid 2px yellow;
    margin-left: 10px;
    margin-right: 10px;
 }
 
+.ajusticono {
+   margin-left: -10px;
+   margin-right: 15px;
+}
+
+.ajustsearch {
+   height: 45px;
+}
 
 
- /* carrusel */
 
- .blue{
-    background-color: rgb(4, 4, 54);
- }
+/* carrusel */
+
+.blue {
+   background-color: rgb(4, 4, 54);
+}
 
 /* Cards */
 
-img{
-   height:350px;
+img {
+   height: 350px;
    width: 625px !important;
    margin-left: 0px;
    border: solid 3px yellow;
 }
 
-div .col{
+div .col {
    width: 650px !important;
    margin-left: 70px;
    margin-top: 50px;
@@ -69,27 +77,26 @@ div .col{
 }
 
 
-.card-text{
+.card-text {
    width: 615px;
    color: white;
    text-shadow: 1px 1px 1px yellow;
-   font-family:  Georgia;
+   font-family: Georgia;
    font-size: 20px;
 }
 
-.card-text span{
+.card-text span {
    color: red;
 }
 
-.card-title{
+.card-title {
    color: white;
    text-shadow: 2px 2px 2px green;
-   font-family:  Georgia;
+   font-family: Georgia;
 }
 
-.col .card .card-body
-{
-   
+.col .card .card-body {
+
    background-image: linear-gradient(150deg, rgba(4, 4, 54, 0.788) 10%, rgba(0, 0, 0, 0.911) 100%);
    /* background-image: linear-gradient(135deg, rgba(255, 255, 0, 0.281) 10%, rgb(2, 2, 0) 100%); */
 }
@@ -102,70 +109,96 @@ div .col{
 
 
 
-.tablaliga{
+.tablaliga {
    font-size: 55px;
    color: white;
    text-shadow: 1px 1px 1px yellow;
    margin: 100px;
 }
 
-.logolig{
-   height: 250px ;
-   width: 250px !important;
+.logolig {
+   height: 350px;
+   width: 350px !important;
+   border-radius: 25px;
 }
 
-.colortab{
+.colortab {
    background-color: white;
 }
 
-.colorloc{
+.colorloc {
    color: red;
    font-size: 17px;
 }
 
-.colorvisi{
+.colorvisi {
    color: blue;
    font-size: 17px;
 }
 
-.colorres{
+.colorres {
    color: rgb(2, 124, 2);
    font-size: 19px;
 }
 
-.colorjor{
+.colorjor {
    color: magenta;
    font-size: 20px;
 }
 
 
-table .colorResult tr td:nth-child(5){
-color: green;
-font-size: 20px;
+table .colorResult tr td:nth-child(5) {
+   color: green;
+   font-size: 20px;
 }
 
+/* botones */
+
+.logocham {
+   height: 100px;
+   width: 100px !important;
+   margin-left: 40px;
+}
+
+.logocham2 {
+   height: 100px;
+   width: 100px !important;
+   margin-right: 35px;
+}
+
+.b {
+   margin-top: 35px !important;
+   background-color: rgb(2, 2, 56);
+   color: white;
+}
+
+.pa {
+   margin-top: 35px !important;
+   background-color: rgb(8, 8, 160);
+   color: white;
+}
 
 
 /* tabla clasif */
 
-.gradi{
+.gradi {
    background-image: linear-gradient(150deg, rgba(4, 4, 54, 0.788) 50%, rgba(0, 0, 0, 0.911) 100%);
 }
 
-.tablaligaclasi{
+.tablaligaclasi {
    font-size: 50px;
    color: white;
    text-shadow: 1px 1px 1px yellow;
    margin: 100px;
 }
 
-.logoligclasi{
-   height: 300px ;
-   width: 300px !important;
+.logoligclasi {
+   height: 350px;
+   width: 350px !important;
 }
 
- 
- /* Footer  */
+
+/* Footer  */
 
 
 footer img {
@@ -175,33 +208,33 @@ footer img {
    margin: 5px;
 }
 
-.twit{
+.twit {
    width: 60px !important;
 }
 
-th{
+th {
    font-size: 20px;
 }
 
 
-footer span{
+footer span {
    color: yellow;
    font-size: 18px;
 }
 
-.footersep{
+.footersep {
    margin-left: -25px;
 }
 
-.footersep a{
+.footersep a {
    margin: 5px
 }
 
-.centrarfooter{
+.centrarfooter {
    margin-left: -170px;
 }
 
-.centrartextfooter{
+.centrartextfooter {
    margin-left: -10px;
 }
 
@@ -210,87 +243,92 @@ footer span{
 
 .ajustarform {
    margin-bottom: 20px;
-   margin-left: 400px;
+   margin-left: 100px;
    margin-right: 100px;
 }
 
-.check{
+.ajustarinp {
+   height: 50px;
+   margin-top: 5px !important;
+}
+
+.check {
    margin: 10px;
    margin-top: 16px;
 }
 
-.boton{
+.boton {
    margin: 5px;
 }
 
-.reset{
+.reset {
    margin: 5px;
 }
 
-.label{
-  margin-right: 25px;
-  margin-top: 10px;
-  white-space: nowrap;
+.label {
+   margin-right: 25px;
+   margin-top: 10px;
+   white-space: nowrap;
 }
 
-.labcheck1{
-   color: green;
+.labcheck1 {
+   color: gold;
 }
 
-.labcheck2{
-color: red;
+.labcheck2 {
+   color: red;
 }
 
-.labcheck3{
+.labcheck3 {
    color: violet;
 }
 
-.labcheck4{
+.labcheck4 {
    color: chartreuse;
 }
 
 /* clasifi */
 
-.labcheckc1{
-color: orange;
+.labcheckc1 {
+   color: orange;
 }
 
-.labcheckc2{
-color: cyan;
+.labcheckc2 {
+   color: cyan;
 }
 
-.botonc{
+.botonc {
    margin: 5px;
 }
 
-.resetc{
+.resetc {
    margin: 5px;
 }
 
-.c{
+.c {
    margin-left: 800px;
 }
 
 /* tablas 5 mejores */
 
-.top{
+.top {
    margin-top: 20px;
    width: 900px;
 }
 
-.reduciresta{
+.reduciresta {
    width: 220px;
 }
 
-.reduciresta2V{
+.reduciresta2V {
    width: 300px;
 }
 
-.reduciresta2G{
+.reduciresta2G {
    width: 220px;
 }
 
-.reduciresta2P{
+.reduciresta2P {
    width: 220px;
 }
 
@@ -299,53 +337,122 @@ color: cyan;
    width: 60px !important;
    margin: 10px !important;
    border: solid 0px !important;
-} 
+}
 
-.tablaMedia{
+.tablaMedia {
    font-size: 40px;
-   color: rgb(4, 4, 54);;
-   text-shadow: 1px 1px 1px rgb(4, 4, 54);;
+   color: rgb(4, 4, 54);
+   ;
+   text-shadow: 1px 1px 1px rgb(4, 4, 54);
+   ;
    margin: 50px;
    margin-top: 100px;
 }
 
-.tablaGContra{
+.tablaGContra {
    font-size: 40px;
-   color: rgb(4, 4, 54);;
-   text-shadow: 1px 1px 1px rgb(4, 4, 54);;
+   color: rgb(4, 4, 54);
+   ;
+   text-shadow: 1px 1px 1px rgb(4, 4, 54);
+   ;
    margin: 50px;
    margin-top: 120px;
 }
 
-.logoMedia{
-   height: 240px ;
+.tablaMediaW {
+   font-size: 40px;
+   color: white;
+   text-shadow: 1px 1px 1px rgb(4, 4, 54);
+   ;
+   margin: 50px;
+   margin-top: 100px;
+}
+
+.logoMedia {
+   height: 240px;
    width: 240px !important;
    margin-top: 20px;
-   border: solid 4px  rgb(158, 135, 4)
+   border: solid 4px rgb(158, 135, 4)
 }
 
-.M{
-margin-left: 20px;
+.M {
+   margin-left: 20px;
 }
 
-.logoContra{
-   height: 260px ;
+.logoContra {
+   height: 260px;
    width: 260px !important;
    margin-top: 20px;
-   border: solid 4px  rgb(158, 135, 4)
+   border: solid 4px rgb(158, 135, 4)
 }
 
-.estacolor{
+.estacolor {
    background-image: linear-gradient(150deg, rgba(255, 255, 255, 0.363) 10%, rgba(0, 0, 0, 0.911) 100%);
 }
 
 
 .logoMedia,
-.logoContra{
+.logoContra {
    opacity: 0.9;
 }
 
-.opa{
+.opa {
    opacity: 0.8;
 }
-   
+
+.logoE {
+   margin-left: 40px;
+   border-radius: 25px;
+   border: solid 3px rgb(141, 2, 2);
+}
+
+/* spinner */
+
+.spinner {
+
+   border: 16px solid #f3f3f3;
+   /* Light grey */
+   border-radius: 50%;
+   width: 120px;
+   height: 120px;
+   animation: spin 2s linear infinite;
+   border-top: 16px solid blue;
+   border-right: 16px solid green;
+   border-bottom: 16px solid red;
+   margin-left: 700px;
+}
+
+@keyframes spin {
+   0% {
+      transform: rotate(0deg);
+   }
+
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+
+.Esta {
+   color: blue;
+}
+
+/* Alerts */
+
+.A1{
+   margin-left: 500Px;
+   margin-right: 500px;
+   font-size: 20px;
+}
+
+.A2{
+   margin-left: 470Px;
+   margin-right: 470px;
+   font-size: 20px;
+}
+
+.A3{
+   margin-left: 490Px;
+   margin-right: 490px;
+   font-size: 20px;
+}
