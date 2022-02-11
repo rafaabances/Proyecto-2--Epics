@@ -62,7 +62,7 @@ Consta de 1aler de Java Script y 3 Modal/alerts:
   ***
   7. El 3º Modal/alert salta cuando introduces un número en lugar de un nombre y en tal caso se despliega el alert con el mensaje: "Debes introducir un Nombre y no un Número"
 
-
-Contacto: Hotmail: *rafaelabancesserrate@hotmail.com*
+***
+Contacto: Hotmail: **rafaelabancesserrate@hotmail.com**
 Telf: *+34 608 292 160*
 
