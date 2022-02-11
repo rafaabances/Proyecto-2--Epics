@@ -38,12 +38,12 @@ La estructura de la web se compone de:
 
 1. HOME: Es la página principal, en ella tenemos una NavBar que te lleva al resto de páginas, tiene también un carrusel que  va pasando un vídeo y fotos en segundos, también consta de de 4 cards con anuncios, imágenes de decoración. y un footer con las redes sociales y un input para poder suscribirte.
 ***
-3. Partidos de las ligas y UEFA: En esta página tenemos una tabla con todos los partidos jugados de esta temporada y de los que quedan por jugar, al estar conectado con el fetch se actualizan en cuanto se carga la página, te permite filtrar esta tabla a un equipo en concreto y a partidos ganados,perdidos, empatados y los pendientes.
+2. Partidos de las ligas y UEFA: En esta página tenemos una tabla con todos los partidos jugados de esta temporada y de los que quedan por jugar, al estar conectado con el fetch se actualizan en cuanto se carga la página, te permite filtrar esta tabla a un equipo en concreto y a partidos ganados,perdidos, empatados y los pendientes.
 Además consta de una serie de botones que te permiten ver y filtrar la liga Premier, Bundesliga, francesa, italiana y la Uefa Champions League.
 ***
-5. Clasificación de equipos: En esta página observamos la clasificación de los equipos con diversas variables, la puntuación, las victorias, derrotas goles a favor, en contra y diferencia de goles. Además conta de botones que te permiten ver la clasificación de la Premier, Bundesliga y el resto de ligas, todo actualizado y en tiempo real
+3. Clasificación de equipos: En esta página observamos la clasificación de los equipos con diversas variables, la puntuación, las victorias, derrotas goles a favor, en contra y diferencia de goles. Además conta de botones que te permiten ver la clasificación de la Premier, Bundesliga y el resto de ligas, todo actualizado y en tiempo real
 ***
-7. Estadísticas: En dicha página podemos observar una serie de estadísticas, en primer lugar podemos ver una tabla ordenada con los equipos que mayor media de goles/partido tienen, a continuación vemos otra tabla ordenada con los equipos que menos goles en contra tienen,amabas tablas se actualizan en cada carga y como en las tablas de partidos y clasificación también se puede consultar otras ligas.
+4. Estadísticas: En dicha página podemos observar una serie de estadísticas, en primer lugar podemos ver una tabla ordenada con los equipos que mayor media de goles/partido tienen, a continuación vemos otra tabla ordenada con los equipos que menos goles en contra tienen,amabas tablas se actualizan en cada carga y como en las tablas de partidos y clasificación también se puede consultar otras ligas.
 
 
 Funcionalidades:
@@ -55,11 +55,14 @@ Funcionalidades:
 Consta de 1aler de Java Script y 3 Modal/alerts:
 
   1. El alert, salta en el caso de que si hay algún error en la carga de datos despliega un cuadro que dice: "Ha ocurrido un error".
-  2. El 1º de los Modals ocurre cuando no has introducido nada en el buscador y le das a buscar, te salta un modal que te dice: "Debes introducir el nombre de tu equipo."
-  3. El 2º de los Modals ocurre cuando has introducido mal el nombre del equipo o has introducido un equipo que no pertenece a esa liga, en tal caso se despliega otro modal con el mensaje: "El Equipo que buscas no se encuentra en esta Liga."
-  4. El 3º Modal/alert salta cuando introduces un número en lugar de un nombre y en tal caso se despliega el alert con el mensaje: "Debes introducir un Nombre y no un Número"
+  ***
+  3. El 1º de los Modals ocurre cuando no has introducido nada en el buscador y le das a buscar, te salta un modal que te dice: "Debes introducir el nombre de tu equipo."
+  ***
+  5. El 2º de los Modals ocurre cuando has introducido mal el nombre del equipo o has introducido un equipo que no pertenece a esa liga, en tal caso se despliega otro modal con el mensaje: "El Equipo que buscas no se encuentra en esta Liga."
+  ***
+  7. El 3º Modal/alert salta cuando introduces un número en lugar de un nombre y en tal caso se despliega el alert con el mensaje: "Debes introducir un Nombre y no un Número"
 
 
-Contacto: Hotmail: rafaelabancesserrate@hotmail.com
-Telf: +34 608 292 160
+Contacto: Hotmail: *rafaelabancesserrate@hotmail.com*
+Telf: *+34 608 292 160*
 
