@@ -4,7 +4,7 @@
 
 Accede a la web: [FútbolRafi.com](https://futbolrafi.netlify.app/home)
 
-![Imagen de la web](C:/Users/Rafa/OneDrive/Let's Coder/Proyecto 2 - Epics/Imagenes/FútbolRafi.jpg)
+<img src="Imagenes/FútbolRafi.jpg" alt="logo">
 
 Se trata de un proyecto en el cual se va a desarrollar una web deportiva para fúboleros, en donde se podrá encontrar todos los partidos jugados de diferentes ligas, Santander, la Premier, la BundesLiga entre otras. También se podrá 
 
