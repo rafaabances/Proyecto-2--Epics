@@ -31,22 +31,42 @@ function getFetch(url) {
         let partidosfe = data3.matches
 
         let boton = document.getElementById("boton")
+        // boton.onclick = null
         boton.addEventListener("click", () => {
+            quitaralerta1()
+            quitaralerta2();
+            quitaralerta3();
+            filtrarJornada(partidosfe) 
             Crearfiltro(partidosfe);
         })
+
+        // let jornada = document.getElementById("jornada")
+        // jornada.addEventListener("click", () => {
+        //    filtrarJornada(partidosfe) 
+
+        // })
+
+        
 
         let reset = document.getElementById("botonreset")
         reset.addEventListener("click", () => {
             unselect();
+            CrearTabla(partidosfe);
             quitaralerta1()
             quitaralerta2();
             quitaralerta3();
-            CrearTabla(partidosfe);
         })
 
 
+
         quitarSpinner()
+        // quitaralerta1()
+        // quitaralerta2();
+        // quitaralerta3();
         CrearTabla(partidosfe)
+
+
+
 
 
     }).catch(error => {
@@ -63,6 +83,7 @@ let ligaEspañola = document.getElementById("botonEspañola");
 ligaEspañola.addEventListener("click", () => {
     const url = "https://api.football-data.org/v2/competitions/2014/matches"
     getFetch(url)
+    // Crearfiltro(partidosfe)
 })
 
 let premierLeague = document.getElementById("botonPremier");
@@ -191,6 +212,7 @@ function unselect() {
 function Crearfiltro(partido) {
     let inputnombre = document.getElementById("inputbusc").value
     let check = document.querySelector("input[type=radio]:checked")
+
     if (inputnombre == "") {
         return poneralerta1();
     }
@@ -208,9 +230,13 @@ function Crearfiltro(partido) {
         }
     })
 
-    if ((nombreEqinput.length === 0)) {
+    if (nombreEqinput.length === 0) {
         return poneralerta2() // alerta2 el equipo que buscas no se encuentra en esta liga ( solo funciona en la española)
     }
+
+
+
+
 
 
 
@@ -218,7 +244,7 @@ function Crearfiltro(partido) {
         return CrearTabla(nombreEqinput)
     }
 
-    CrearTabla(nombreEqinput)
+    // CrearTabla(nombreEqinput)
     let filtrocheck = nombreEqinput.filter(x => {
         if (check.value === "Ganados") {
             if ((x.homeTeam.name.toLowerCase().includes(inputnombre.toLowerCase()) && x.score.winner === "HOME_TEAM") ||
@@ -245,6 +271,7 @@ function Crearfiltro(partido) {
 
     })
 
+
     CrearTabla(filtrocheck)
     // unselect()
 }
@@ -256,6 +283,19 @@ function Crearfiltro(partido) {
 //    spinner.style.display = "block"
 //    spinner.style.visibility = "visible"
 // }
+
+
+function filtrarJornada(x) {
+    let inputnombre = document.getElementById("inputbusc").value
+    let partidosSeleccionados = x.filter((partidosfe) => {
+        if (partidosfe.matchday === parseInt(inputnombre)) {
+            return true
+        } else {
+            return false
+        };
+    });
+    CrearTabla(partidosSeleccionados);
+}
 
 function quitarSpinner() {
     let spinner = document.getElementById("spinner")
@@ -274,21 +314,21 @@ function quitaralerta1() {
 }
 
 function poneralerta2() {
-    let alert1 = document.getElementById("aler2")
-    alert1.style.display = "block"
+    let alert2 = document.getElementById("aler2")
+    alert2.style.display = "block"
 }
 
 function quitaralerta2() {
-    let alert1 = document.getElementById("aler2")
-    alert1.style.display = "none"
+    let alert2 = document.getElementById("aler2")
+    alert2.style.display = "none"
 }
 
 function poneralerta3() {
-    let alert1 = document.getElementById("aler3")
-    alert1.style.display = "block"
+    let aler3 = document.getElementById("aler3")
+    alert3.style.display = "block"
 }
 
 function quitaralerta3() {
-    let alert1 = document.getElementById("aler3")
-    alert1.style.display = "none"
+    let alert3 = document.getElementById("aler3")
+    alert3.style.display = "none"
 }
