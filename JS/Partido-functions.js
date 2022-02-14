@@ -11,7 +11,7 @@
 
 quitaralerta1();
 quitaralerta2();
-quitaralerta3();
+// quitaralerta3();
 
 
 function getFetch(url) {
@@ -35,7 +35,7 @@ function getFetch(url) {
         boton.addEventListener("click", () => {
             quitaralerta1()
             quitaralerta2();
-            quitaralerta3();
+            // quitaralerta3();
             filtrarJornada(partidosfe) 
             Crearfiltro(partidosfe);
         })
@@ -54,7 +54,7 @@ function getFetch(url) {
             CrearTabla(partidosfe);
             quitaralerta1()
             quitaralerta2();
-            quitaralerta3();
+            // quitaralerta3();
         })
 
 
@@ -218,7 +218,7 @@ function Crearfiltro(partido) {
     }
 
     if (!isNaN(inputnombre)) {
-        return poneralerta3()
+        return poneralerta3() // no existe (está comentada, pero si lo quito me sale la alerta 2 si pongo un número)
     }
 
     let nombreEqinput = partido.filter(x => {
@@ -323,12 +323,12 @@ function quitaralerta2() {
     alert2.style.display = "none"
 }
 
-function poneralerta3() {
-    let aler3 = document.getElementById("aler3")
-    alert3.style.display = "block"
-}
+// function poneralerta3() {
+//     let aler3 = document.getElementById("aler3")
+//     alert3.style.display = "block"
+// }
 
-function quitaralerta3() {
-    let alert3 = document.getElementById("aler3")
-    alert3.style.display = "none"
-}
+// function quitaralerta3() {
+//     let alert3 = document.getElementById("aler3")
+//     alert3.style.display = "none"
+// }
