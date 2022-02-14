@@ -209,7 +209,7 @@ function Crearfiltro(partido) {
     })
 
     if ((nombreEqinput.length === 0)) {
-        return poneralerta2() // alerta2 el equipo que buscas no se encuentra en esta liga
+        return poneralerta2() // alerta2 el equipo que buscas no se encuentra en esta liga ( solo funciona en la española)
     }
 
 
@@ -246,7 +246,7 @@ function Crearfiltro(partido) {
     })
 
     CrearTabla(filtrocheck)
-    unselect()
+    // unselect()
 }
 
 // Crearfiltro(partidos)
