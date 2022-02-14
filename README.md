@@ -71,10 +71,10 @@ Consta de 1aler de Java Script y 3 Modal/alerts:
 - ForEach: lo hemos usado para manipular objetos y obtener datos diferentes a los mostrados por el objeto, entre ellos la media.
 El método forEach() también se usa para recorrer arreglos, pero usa una función diferente a la del clásico “bucle for”. Pasa una función de devolución de llamada para cada elemento de una matriz junto con los siguientes parámetros:
 
-*Valor actual (obligatorio): el valor del elemento de matriz actual
-*Índice (opcional): el número de índice del elemento actual
-*Array (opcional): el objeto de matriz al que pertenece el elemento actual
-*Necesitamos una función de devolución de llamada para recorrer una matriz utilizando el método forEach.
+-*Valor actual (obligatorio): el valor del elemento de matriz actual
+-*Índice (opcional): el número de índice del elemento actual
+-*Array (opcional): el objeto de matriz al que pertenece el elemento actual
+-*Necesitamos una función de devolución de llamada para recorrer una matriz utilizando el método forEach.
 
 Para cada elemento de la matriz, se ejecutará la función. La devolución de llamada debe tener al menos un parámetro que represente los elementos de una matriz.
 
