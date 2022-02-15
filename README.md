@@ -7,7 +7,7 @@ Accede a la web: [FútbolRafi.com](https://futbolrafi.netlify.app/home)
 <img src="Imagenes/FútbolRafi.jpg" alt="logo">
 
 Se trata de un proyecto en el cual se va a desarrollar una web deportiva para fúboleros, en donde se podrá encontrar todos los partidos jugados de diferentes ligas, Santander, la Premier, la BundesLiga entre otras. También se podrá consultar la clasificación y estadísticas tales como: Nº de goles, Partidos jugados o la media de goles/partido.
-En la página de partidos se podrá realizar filtros de partidos ganados, perdidos, empatados, filtro por jornada o partidos por jugar.
+En la página de partidos se podrá realizar filtros de partidos ganados, perdidos, empatados, filtro por jornada o partidos por jugar. Y además también se podra acceder a las webs de los equipos de diferentes ligas.
 
 Toda la información está conectada de manera asíncrona a una API por lo que la información está actualizada en todo momento haciendo de esta web dinámica y no estática.
 
@@ -44,6 +44,8 @@ Además consta de una serie de botones que te permiten ver y filtrar la liga Pre
 3. Clasificación de equipos: En esta página observamos la clasificación de los equipos con diversas variables, la puntuación, las victorias, derrotas goles a favor, en contra y diferencia de goles. Además conta de botones que te permiten ver la clasificación de la Premier, Bundesliga y el resto de ligas, todo actualizado y en tiempo real
 ***
 4. Estadísticas: En dicha página podemos observar una serie de estadísticas, en primer lugar podemos ver una tabla ordenada con los equipos que mayor media de goles/partido tienen, a continuación vemos otra tabla ordenada con los equipos que menos goles en contra tienen,amabas tablas se actualizan en cada carga y como en las tablas de partidos y clasificación también se puede consultar otras ligas.
+***
+5. LinksLigas: En esta página se puede consultar los links de diferentes ligas, los cuales te llevan a la página web del equipo.
 
 
 ### Funcionalidades:
@@ -84,6 +86,8 @@ La diferencia entre el bucle For y el ForEach se resume en la siguiente imagen:
 
 - Filter: Lo hemos usado junto a los condicionales if para posibilitar los filtros de la página de partidos (ganados, perdidos o empatados, próximos partidos o por jornada)
 El método Filter crea un nuevo arreglo, el cual no busca modificar el valor de los elementos para el nuevo arreglo, únicamente retorna aquellos elementos que cumplan con las condiciones del filtro, los cuales serán almacenados en otro arreglo.
+
+- Append y Appenchild: Son métodos qde JavaScript que sirven para insertar un nuevo nodo (elemento, array o div) dentro de la estructura DOM (otro div padre) de un documento
 
 ***
 Contacto: Hotmail: **rafaelabancesserrate@hotmail.com**
