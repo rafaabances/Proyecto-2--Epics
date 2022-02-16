@@ -35,8 +35,8 @@ function getFetch(url) {
         boton.addEventListener("click", () => {
             quitaralerta1();
             quitaralerta2();
-            Crearfiltro(partidosfe);
             filtrarJornada(partidosfe);
+            Crearfiltro(partidosfe);
         })
 
         // let jornada = document.getElementById("jornada")
@@ -57,12 +57,14 @@ function getFetch(url) {
             
         })
 
-
+    
 
         quitarSpinner();
-        CrearTabla(partidosfe);
+        quitaralerta1();
+        quitaralerta2();
+    CrearTabla(partidosfe)
 
-
+       
 
 
 
@@ -211,7 +213,7 @@ function Crearfiltro(partido) {
     let check = document.querySelector("input[type=radio]:checked")
 
     if (inputnombre == "") {
-        return poneralerta1();
+        return poneralerta1()
     }
 
     if (!isNaN(inputnombre)) {
@@ -265,6 +267,7 @@ function Crearfiltro(partido) {
 
 
     CrearTabla(filtrocheck)
+    
     // unselect()
 }
 
@@ -278,9 +281,9 @@ function Crearfiltro(partido) {
 
 
 function filtrarJornada(x) {
-    let inputnombre = document.getElementById("inputbusc").value
+    let inputnombre2 = document.getElementById("inputbusc").value
     let partidosSeleccionados = x.filter((partidosfe) => {
-        if (partidosfe.matchday === parseInt(inputnombre)) {
+        if (partidosfe.matchday === parseInt(inputnombre2)) {
             return true
         } else {
             return false
