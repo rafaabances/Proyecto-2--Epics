@@ -54,6 +54,8 @@ iframe {
 
 
 
+
+
 /* carrusel */
 
 .blue {
@@ -519,3 +521,34 @@ margin-right: 10px;
 background-color: rgba(0, 0, 0, 0.822);
 
 }
+
+/* Responsive */
+
+
+@media only screen and (max-width: 700px) {
+   .estaligasresp {
+       display: flex;
+       flex-direction: column;
+       /* width: 500px;
+       height: 90px; */
+   }
+}
+
+@media only screen and (max-width: 700px) {
+   .carresp {
+      
+       width: 400px;
+       height: 400px;
+       margin-left: 5px;
+   }
+}
+
+@media only screen and (max-width: 700px) {
+   .carrespd {
+      
+       width: 400px;
+       height: 400px;
+       margin-left: 5px;
+   }
+}
+
