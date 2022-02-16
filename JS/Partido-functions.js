@@ -33,11 +33,10 @@ function getFetch(url) {
         let boton = document.getElementById("boton")
         // boton.onclick = null
         boton.addEventListener("click", () => {
-            quitaralerta1()
+            quitaralerta1();
             quitaralerta2();
-            // quitaralerta3();
-            filtrarJornada(partidosfe) 
             Crearfiltro(partidosfe);
+            filtrarJornada(partidosfe);
         })
 
         // let jornada = document.getElementById("jornada")
@@ -52,18 +51,16 @@ function getFetch(url) {
         reset.addEventListener("click", () => {
             unselect();
             CrearTabla(partidosfe);
-            quitaralerta1()
+            quitaralerta1();
             quitaralerta2();
             // quitaralerta3();
+            
         })
 
 
 
-        quitarSpinner()
-        // quitaralerta1()
-        // quitaralerta2();
-        // quitaralerta3();
-        CrearTabla(partidosfe)
+        quitarSpinner();
+        CrearTabla(partidosfe);
 
 
 
@@ -233,11 +230,6 @@ function Crearfiltro(partido) {
     if (nombreEqinput.length === 0) {
         return poneralerta2() // alerta2 el equipo que buscas no se encuentra en esta liga ( solo funciona en la española)
     }
-
-
-
-
-
 
 
     if (check === null) {

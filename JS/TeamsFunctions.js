@@ -83,7 +83,6 @@ champions.addEventListener("click", () => {
 })
 
 
-
 function CrearLinks(link) {
     let divs = document.getElementById("cuerpo_links")
     divs.innerText = "";
@@ -97,7 +96,8 @@ function CrearLinks(link) {
         EscudoL.classList.add("lkajustar");
 
 
-//como se pone lo de la imagen?
+        //como se pone lo de la imagen?
+
 
         let NombreEquipo = document.createElement("a", "link[i].name")
         NombreEquipo.innerHTML = link[i].name
@@ -123,6 +123,61 @@ function CrearLinks(link) {
 
 
 }
+
+
+
+
+// link con con imagen y texto
+
+// function CrearLinks(link) {
+//     let divs = document.getElementById("cuerpo_links")
+//     divs.innerText = "";
+//     for (let i = 0; i < link.length; i++) {
+
+//         const divHijos = document.createElement("div")
+//         divHijos.classList.add("lkmarcodiv"); // aquí hover en css.
+
+//         let EscudoL = document.createElement("img")
+//         EscudoL.setAttribute("src", link[i].crestUrl)
+//         EscudoL.classList.add("lkajustar");
+
+
+//         //como se pone lo de la imagen?
+
+//         let linkimg = document.createElement("a")
+//         linkimg.href = link[i].website
+//         // linkimg.style.color = "white"
+//         linkimg.classList.add("lkequipo")
+
+//         let NombreEquipo = document.createTextNode(link[i].name)
+//         divHijos.append(EscudoL)
+//         divHijos.append(NombreEquipo)
+//         linkimg.append(divHijos)
+//         divs.append(linkimg)
+
+//         // NombreEquipo.innerHTML = link[i].name
+//         // NombreEquipo.setAttribute("href", link[i].website);
+//         // NombreEquipo.classList.add("lkequipo")
+
+
+//         // let linksrecogidos = [EscudoL, NombreEquipo];
+
+//         // for (let j = 0; j < linksrecogidos.length; j++) {
+//         //     const divpeque = document.createElement("div")
+//         //     divpeque.classList.add("lkclasediv");
+
+//         //     divpeque.append(linksrecogidos[j]);
+//         //     divHijos.appendChild(divpeque);
+
+
+//         //     divs.appendChild(divHijos);
+
+//         // }
+
+//     }
+
+
+// }
 
 // CrearLinks(teamslink)
 

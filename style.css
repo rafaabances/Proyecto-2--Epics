@@ -123,7 +123,7 @@ div .col {
 }
 
 .colortab {
-   background-color: white;
+   background-color: rgba(255, 255, 255, 0.712);
 }
 
 .colorloc {
@@ -491,9 +491,7 @@ footer span {
    margin-top: 50px !important;
 }
 
-.lkmarcodiv{
 
-}
 
 .lkajustar{
    height: 70px !important;
