@@ -11,7 +11,7 @@ En la página de partidos se podrá realizar filtros de partidos ganados, perdid
 
 Toda la información está conectada de manera asíncrona a una API por lo que la información está actualizada en todo momento haciendo de esta web dinámica y no estática.
 
-### En cuanto atenologías hemos empleado: 
+### En cuanto a tenologías hemos empleado: 
 
 - HTML: Es un lenguaje de marcado que lo hemos usado para estructurar las páginas y poner los ids, clases y scripts de conexion a CSS y JS. 
 ***
